@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Discord Bot Documentation</title>
+    <title>OxyBot Documentation</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -61,12 +61,11 @@
     <header>
         <div class="container">
             <div id="branding">
-                <h1>My Discord Bot</h1>
+                <h1>OxyBot</h1>
             </div>
             <nav>
                 <ul>
                     <li class="current"><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
                 </ul>
             </nav>
         </div>
@@ -78,13 +77,30 @@
             <p>This documentation will guide you through the commands and features of My Discord Bot.</p>
 
             <h2>Command Syntax</h2>
-            <p>Commands in this bot follow this general syntax: <code>!command [arguments]</code></p>
+            <p>Commands in this bot follow this general syntax: <code>!command [arguments]. Also the bot supports slash (/) commands, which is recommended.</code></p>
 
-            <h3>Example Commands</h3>
+            <h3>General Commands</h3>
             <ul>
                 <li><code>!help</code> - Displays help information.</li>
-                <li><code>!ping</code> - Responds with "Pong!" and latency.</li>
+                <li><code>!ping</code> - If the bot is alive, also responds with the latency of the bot.</li>
+                <li><code>!botinfo</code> - Shows info about the bot like owner of the bot, amount of servers the bot is in, the python version the bot is running on, and the version of the bot.</li>
+                <li><code>!serverinfo</code> - Shows info about the server like the server name, guild id, member count, and text/voice channel count.</li>
+                <li><code>!invite</code> - Sends the user a link to invite the bot to a server.</li>
+                <li><code>!server</code> - Sends the user a link to the support server of the bot.</li>
+                <li><code>!8ball [question]</code> - responds with a response from an 8ball</li>
+                <li><code>!bitcoin</code> - responds with the current price of bitcoin</li>
+                <li><code>!userstats [user]</code> - Responds with info about a user like thwir account age, messages sent in the server, date they joined the server, and how much bot currecny they have. Optionally, you can run the command without specifing a user to get your own stats.</li>
+                <li><code>!leaderboard</code> - Responds with a leaderboard ranking users by message count in the server.</li>
+
+                <!-- Add more commands here -->
+            </ul>
+
+            <h3>Moderation Commands</h3>
+            <ul>
                 <li><code>!kick [user]</code> - Kicks a user from the server.</li>
+                <li><code>!nick [user] [nickname]</code> - Changes a users nickname.</li>
+                <li><code>!ban [user] [reason]</code> - Bans a user from the server, reason is optional.</li>
+
                 <!-- Add more commands here -->
             </ul>
         </section>
